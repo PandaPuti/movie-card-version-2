@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Movie Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: white;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .page-title {
+            text-align: center;
+            color: #e50914;
+            font-size: 42px;
+            margin-bottom: 50px;
+        }
+
+        .movie-container {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .movie-card {
+            background-color: #1f1f1f;
+            border-radius: 12px;
+            width: 400px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px rgba(229, 9, 20, 0.3);
+        }
+
+        .movie-card h1 {
+            color: #ffffff;
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e50914;
+            padding-bottom: 10px;
+        }
+
+        .movie-card img {
+          width: 100%;
+          height: 200px;
+          object-fit: contan;
+          object-position: center;
+        }
+
+        .movie-card h2 {
+            color: #e50914;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+
+        .movie-card p {
+            color: #b3b3b3;
+            font-size: 15px;
+            line-height: 1.7;
+            margin: 8px 0;
+        }
+
+        .plot {
+            color: #e0e0e0;
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid #e50914;
+            margin-bottom: 20px;
+        }
+
+        .info-label {
+            color: #888;
+            font-weight: bold;
+            display: inline-block;
+            width: 80px;
+        }
+
+        .info-value {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-title">My Favorite Movies</div>
+    
+    <div class="movie-container">
+        
+        <!-- Movie Card 1 -->
+        <div class="movie-card">
+          <h1>The Shawshank Redemption</h1>
+          <img src="https://tse4.mm.bing.net/th/id/OIP.8Xe5VESw3PeHepirT89BXgHaLA?pid=Api&P=0" alt="Movie Poster">
+          <h2>Plot Summary:</h2>
+          <p class="plot">A wrongfully convicted banker forms a close friendship with a hardened convict over a quarter century while retaining his humanity through simple acts of compassion.</p>
+          <p><span class="info-label">Rating:</span> <span class="info-value">9.3/10</span></p>
+          <p><span class="info-label">Year:</span> <span class="info-value">1994</span></p>
+          <p><span class="info-label">Genre:</span> <span class="info-value">Drama, Prison Drama, Psychological Drama</span></p>
+          <p><span class="info-label">Director:</span> <span class="info-value">Frank Darabont</span></p>
+          <p><span class="info-label">Cast:</span> <span class="info-value">Tim Robbins, Morgan Freeman, Bob Gunton</span></p>
+        </div>
+
+        <!-- Movie Card 2 -->
+        <div class="movie-card">
+          <h1>The Godfather</h1>
+          <img src="https://tse2.mm.bing.net/th/id/OIP.BV6gCt1rwqEmjRnWZ-sdPAHaLK?pid=Api&P=0" alt="Movie Poster">
+          <h2>Plot Summary:</h2>
+          <p class="plot">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
+          <p><span class="info-label">Rating:</span> <span class="info-value">9.2/10</span></p>
+          <p><span class="info-label">Year:</span> <span class="info-value">1972</span></p>
+          <p><span class="info-label">Genre:</span> <span class="info-value">Drama, Crime, Epic, Gangster</span></p>
+          <p><span class="info-label">Director:</span> <span class="info-value">Francis Ford Coppola</span></p>
+          <p><span class="info-label">Cast:</span> <span class="info-value">Marlon Brando, Al Pacino, James Caan</span></p>
+        </div>
+
+        <!-- Movie Card 3 -->
+        <div class="movie-card">
+          <h1>The Dark Knight</h1>
+          <img src="https://tse1.mm.bing.net/th/id/OIP.GAZoqM3cIPeL0Fkkp0EYFAHaL1?pid=Api&P=0" alt="Movie Poster">
+          <h2>Plot Summary:</h2>
+          <p class="plot">When a menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, James Gordon and Harvey Dent must work together to put an end to the madness.</p>
+          <p><span class="info-label">Rating:</span> <span class="info-value">9.0/10</span></p>
+          <p><span class="info-label">Year:</span> <span class="info-value">2008</span></p>
+          <p><span class="info-label">Genre:</span> <span class="info-value">Action, Crime, Drama</span></p>
+          <p><span class="info-label">Director:</span> <span class="info-value">Christopher Nolan</span></p>
+          <p><span class="info-label">Cast:</span> <span class="info-value">Christian Bale, Heath Ledger, Aaron Eckhart, Michael Caine</span></p>
+        </div>
+        <!-- Movie Card 4 -->
+        <div class="movie-card">
+          <h1>The Godfather Part two</h1>
+          <img src="https://tse3.mm.bing.net/th/id/OIP.05JDjY3g1VYA4dpH0BTPCQHaLH?pid=Api&P=0" alt="Movie Poster">
+          <h2>Plot Summary:</h2>
+          <p class="plot">The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.</p>
+          <p><span class="info-label">Rating:</span> <span class="info-value">9.0/10</span></p>
+          <p><span class="info-label">Year:</span> <span class="info-value">1974</span></p>
+          <p><span class="info-label">Genre:</span> <span class="info-value">Epic, Gangster, Tragedy, Crime, Drama</span></p>
+          <p><span class="info-label">Director:</span> <span class="info-value">Francis Ford Coppola</span></p>
+          <p><span class="info-label">Cast:</span> <span class="info-value">Al Pacino, Robert De Niro, Robert Duvall</span></p>
+        </div>
+        <!-- Movie Card 5 -->
+        <div class="movie-card">
+          <h1>12 Angry Men</h1>
+          <img src="https://tse3.mm.bing.net/th/id/OIP.5HH5ROGcAClLptxx3jJfRgHaKU?pid=Api&P=0" alt="Movie Poster">
+          <h2>Plot Summary:</h2>
+          <p class="plot">The jury in a New York City murder trial is frustrated by a single member whose skeptical caution forces them to more carefully consider the evidence before jumping to a hasty verdict.</p>
+          <p><span class="info-label">Rating:</span> <span class="info-value">9.0/10</span></p>
+          <p><span class="info-label">Year:</span> <span class="info-value">1957</span></p>
+          <p><span class="info-label">Genre:</span> <span class="info-value">Legal Drama, Psychological Drama, crime, Drama</span></p>
+          <p><span class="info-label">Director:</span> <span class="info-value">Sidney Lumet</span></p>
+          <p><span class="info-label">Cast:</span> <span class="info-value">Henry Fonda, Lee J.Cobb, Martin Balsam</span></p>
+        </div>
+
+    </div>
+</body>
+</html>
